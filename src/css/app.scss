@@ -1,0 +1,167 @@
+// app global css in SCSS form
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+body.body--dark {
+  background: hsl(207, 26%, 17%);
+}
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.aDark {
+  color: white;
+}
+
+.bg-custom-black {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+.bg-custom-black a {
+  color: white;
+}
+.bg-custom-black b {
+  font-weight: 600;
+}
+.bg-custom-white {
+  background-color: white;
+  color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.toolbarCountries {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.rowFilterHome {
+  max-width: 1200px;
+  margin-top: 40px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.searchCountryInput {
+  width: 300px;
+}
+.filterCountrySelect {
+  width: 200px;
+}
+.columCard {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.columCardFull {
+  width: 100% !important;
+}
+.cardCountryLoop {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.cardCountryLoop img {
+  height: 155px;
+}
+.container-countrys {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+a {
+  color: $dark;
+  text-decoration: none;
+}
+.container_detail_country {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+.container_country {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container_country img {
+  margin-right: 80px;
+  height: 350px;
+  width: 500px;
+}
+.detail_country {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+.detail_country h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
+}
+.country_features {
+  display: flex;
+  justify-content: space-between;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+}
+.border_countries {
+  display: flex;
+}
+.border_countries b {
+  margin-right: 20px;
+}
+.border_countries a {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .searchCountryInput {
+    width: 100%;
+  }
+  .filterCountrySelect {
+    margin-top: 30px;
+  }
+  .cardCountryLoop {
+    width: 100%;
+  }
+  .rowFilterHome {
+    flex-direction: column;
+  }
+  .cardCountryLoop img {
+    height: 300px;
+  }
+  .container_country img {
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+  }
+  .country_features {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .detail_country h1 {
+    line-height: 100px;
+  }
+}
